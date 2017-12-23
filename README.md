@@ -24,7 +24,7 @@ While CodingBat does not cover Objective-C, Java and Python are both extremely p
 Writing Unit Tests is also an important skill. Test-driven development helps us find bugs before they cause problems in our projects. Many companies specifically look for developers who know how to write and use tests. However, this is a skill that is sometimes overlooked as we study frameworks.
 
 ## How to get started
-Check the Issues tab above for current work that needs to be done.
+Check the [Issues](https://github.com/martyav/swiftyCodingBat/issues) tab above for current work that needs to be done.
 
 As we make our way through the challenges, we can break things down into 3 main tasks:
 1. Translating function signatures into Swift, and setting up problems to solve
