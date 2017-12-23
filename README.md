@@ -40,7 +40,7 @@ public String helloWorld(String name) {
 } 
 ```
 
-In this function, the function's access level is set to public. When we translate this function into Swift, we don't need to set its scope to public, because of how we're accessing the function inside of our tests.<sup>[1](1)</sup> 
+In this Java function, the access level is set to public. When we translate this function into Swift, we don't need to set its access level to public, because of how we're accessing the function inside of our tests.<sup>[1](1)</sup> 
 
 The type the function returns is listed before the rest of the function signature. Similarly, the type of the parameter `name` is listed before the parameter.
 
