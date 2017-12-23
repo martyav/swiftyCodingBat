@@ -53,7 +53,9 @@ func helloWorld(name: String) -> String {
 } 
 ```
 
-If you take on task #2, you don't have to translate anything. You just have to read the questions carefully and try to answer the questions in Swift, using the method inside the protocol representing each individual problem. While this doesn't necessarily require any knowledge of a language other than Swift, it does require more brainpower than translating. And in some cases, you may want to read over the CodingBat solution in Java for a hint.
+If you take on task #2, you don't have to translate anything. You just have to read the questions carefully and try to answer them in Swift. While this doesn't necessarily require any knowledge of a language other than Swift, it will definitely require more effort than translating, for all but the most simple problems. 
+
+And in some cases, you may want to read over the CodingBat solution in Java for a hint.
 
 Task #3 probably requires the most overhead, in terms of learning how to set up new Unit Tests and work with the XCTest framework, but it's not too intense. Once you know the basics, it's just a matter of adding in proper test cases, based on the test cases at CodingBat.
 
