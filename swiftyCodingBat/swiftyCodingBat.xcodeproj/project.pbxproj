@@ -101,7 +101,7 @@
 		05B6A8151FEE7A00000D96F0 /* Answer Key */ = {
 			isa = PBXGroup;
 			children = (
-				05B6A81E1FEE7D1A000D96F0 /* WarmUp1 */,
+				05B6A81F1FEE7D37000D96F0 /* AnsweredWarmUp1.swift */,
 			);
 			path = "Answer Key";
 			sourceTree = "<group>";
@@ -118,14 +118,6 @@
 			isa = PBXGroup;
 			children = (
 				05B6A81A1FEE7C3E000D96F0 /* SleepIn.swift */,
-			);
-			path = WarmUp1;
-			sourceTree = "<group>";
-		};
-		05B6A81E1FEE7D1A000D96F0 /* WarmUp1 */ = {
-			isa = PBXGroup;
-			children = (
-				05B6A81F1FEE7D37000D96F0 /* AnsweredWarmUp1.swift */,
 			);
 			path = WarmUp1;
 			sourceTree = "<group>";
