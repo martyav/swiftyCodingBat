@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "swiftyCodingBat/Solve Here/SolveWarmUp1.swift"
+            timestampString = "535727882.043255"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "7"
+            endingLineNumber = "7"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "swiftyTests.SolveWarmUp1.deinit"
+                  moduleName = "swiftyTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/martyav/Projects/iOS/swiftyCodingBat/swiftyCodingBat/swiftyCodingBat/Solve%20Here/SolveWarmUp1.swift"
+                  timestampString = "535725955.2706"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "swiftyTests.SolveWarmUp1.__deallocating_deinit"
+                  moduleName = "swiftyTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/martyav/Projects/iOS/swiftyCodingBat/swiftyCodingBat/swiftyCodingBat/Solve%20Here/SolveWarmUp1.swift"
+                  timestampString = "535725955.282283"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "swiftyTests.SolveWarmUp1.__allocating_init() -&gt; swiftyTests.SolveWarmUp1"
+                  moduleName = "swiftyTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/martyav/Projects/iOS/swiftyCodingBat/swiftyCodingBat/swiftyCodingBat/Solve%20Here/SolveWarmUp1.swift"
+                  timestampString = "535725955.29394"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "swiftyTests.SolveWarmUp1.init() -&gt; swiftyTests.SolveWarmUp1"
+                  moduleName = "swiftyTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/martyav/Projects/iOS/swiftyCodingBat/swiftyCodingBat/swiftyCodingBat/Solve%20Here/SolveWarmUp1.swift"
+                  timestampString = "535725955.305156"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "21">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
