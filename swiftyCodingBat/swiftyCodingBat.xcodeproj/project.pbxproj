@@ -17,6 +17,7 @@
 		05B6A8261FEE811A000D96F0 /* TestSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B6A8251FEE811A000D96F0 /* TestSubject.swift */; };
 		05B6A8271FEE811A000D96F0 /* TestSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B6A8251FEE811A000D96F0 /* TestSubject.swift */; };
 		05B6A8291FEE8991000D96F0 /* Instructions.md in Resources */ = {isa = PBXBuildFile; fileRef = 05B6A8281FEE883D000D96F0 /* Instructions.md */; };
+		81DA35911FFC00830078598B /* MonkeyTrouble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DA35901FFC00830078598B /* MonkeyTrouble.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		05B6A81F1FEE7D37000D96F0 /* AnsweredWarmUp1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnsweredWarmUp1.swift; sourceTree = "<group>"; };
 		05B6A8251FEE811A000D96F0 /* TestSubject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSubject.swift; sourceTree = "<group>"; };
 		05B6A8281FEE883D000D96F0 /* Instructions.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Instructions.md; sourceTree = "<group>"; };
+		81DA35901FFC00830078598B /* MonkeyTrouble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonkeyTrouble.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				05B6A81A1FEE7C3E000D96F0 /* SleepIn.swift */,
+				81DA35901FFC00830078598B /* MonkeyTrouble.swift */,
 			);
 			path = WarmUp1;
 			sourceTree = "<group>";
@@ -221,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81DA35911FFC00830078598B /* MonkeyTrouble.swift in Sources */,
 				05B6A8261FEE811A000D96F0 /* TestSubject.swift in Sources */,
 				05B6A8201FEE7D37000D96F0 /* AnsweredWarmUp1.swift in Sources */,
 				05B6A8181FEE7A94000D96F0 /* SolveWarmUp1.swift in Sources */,
