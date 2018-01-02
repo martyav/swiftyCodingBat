@@ -16,3 +16,9 @@ extension AnsweredWarmUp1: SleepIn {
     }
 }
 
+extension AnsweredWarmUp1: MonkeyTrouble {
+    func monkeyTrouble(_ a: Bool, _ b: Bool) -> Bool {
+        return a == b
+    }
+}
+

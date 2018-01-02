@@ -39,4 +39,7 @@ class WarmUp1Tests: XCTestCase {
         XCTAssert(testSubject.sleepIn(false, false) == true)
     }
     
+    func testMonkeyTroubleAnswer() {
+        XCTAssert(testSubject.monkeyTrouble(true, true) == true)
+    }
 }
