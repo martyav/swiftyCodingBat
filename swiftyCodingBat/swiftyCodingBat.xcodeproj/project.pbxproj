@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		05B6A80F1FEE79C9000D96F0 /* WarmUp1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B6A80E1FEE79C9000D96F0 /* WarmUp1Tests.swift */; };
 		05B6A8181FEE7A94000D96F0 /* SolveWarmUp1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B6A8171FEE7A94000D96F0 /* SolveWarmUp1.swift */; };
 		05B6A8191FEE7A94000D96F0 /* SolveWarmUp1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B6A8171FEE7A94000D96F0 /* SolveWarmUp1.swift */; };
 		05B6A81B1FEE7C3E000D96F0 /* SleepIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B6A81A1FEE7C3E000D96F0 /* SleepIn.swift */; };
@@ -17,6 +16,8 @@
 		05B6A8261FEE811A000D96F0 /* TestSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B6A8251FEE811A000D96F0 /* TestSubject.swift */; };
 		05B6A8271FEE811A000D96F0 /* TestSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B6A8251FEE811A000D96F0 /* TestSubject.swift */; };
 		05B6A8291FEE8991000D96F0 /* Instructions.md in Resources */ = {isa = PBXBuildFile; fileRef = 05B6A8281FEE883D000D96F0 /* Instructions.md */; };
+		81C1D2571FFC7913004A6946 /* SleepInTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C1D2561FFC7913004A6946 /* SleepInTests.swift */; };
+		81C1D2591FFC795E004A6946 /* MonkeyTroubleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C1D2581FFC795E004A6946 /* MonkeyTroubleTests.swift */; };
 		81DA35911FFC00830078598B /* MonkeyTrouble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DA35901FFC00830078598B /* MonkeyTrouble.swift */; };
 		81DA35951FFC3F0F0078598B /* MonkeyTrouble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DA35901FFC00830078598B /* MonkeyTrouble.swift */; };
 /* End PBXBuildFile section */
@@ -25,13 +26,14 @@
 		05B6A7FF1FEE7992000D96F0 /* swiftyCodingBat.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = swiftyCodingBat.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		05B6A8021FEE7992000D96F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		05B6A80C1FEE79C9000D96F0 /* swiftyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = swiftyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		05B6A80E1FEE79C9000D96F0 /* WarmUp1Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarmUp1Tests.swift; sourceTree = "<group>"; };
 		05B6A8101FEE79CA000D96F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		05B6A8171FEE7A94000D96F0 /* SolveWarmUp1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolveWarmUp1.swift; sourceTree = "<group>"; };
 		05B6A81A1FEE7C3E000D96F0 /* SleepIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepIn.swift; sourceTree = "<group>"; };
 		05B6A81F1FEE7D37000D96F0 /* AnsweredWarmUp1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnsweredWarmUp1.swift; sourceTree = "<group>"; };
 		05B6A8251FEE811A000D96F0 /* TestSubject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSubject.swift; sourceTree = "<group>"; };
 		05B6A8281FEE883D000D96F0 /* Instructions.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Instructions.md; sourceTree = "<group>"; };
+		81C1D2561FFC7913004A6946 /* SleepInTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepInTests.swift; sourceTree = "<group>"; };
+		81C1D2581FFC795E004A6946 /* MonkeyTroubleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonkeyTroubleTests.swift; sourceTree = "<group>"; };
 		81DA35901FFC00830078598B /* MonkeyTrouble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonkeyTrouble.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -87,7 +89,7 @@
 		05B6A80D1FEE79C9000D96F0 /* swiftyTests */ = {
 			isa = PBXGroup;
 			children = (
-				05B6A80E1FEE79C9000D96F0 /* WarmUp1Tests.swift */,
+				81C1D25A1FFC79C8004A6946 /* WarmUp1 */,
 				05B6A8101FEE79CA000D96F0 /* Info.plist */,
 			);
 			path = swiftyTests;
@@ -122,6 +124,15 @@
 			children = (
 				05B6A81A1FEE7C3E000D96F0 /* SleepIn.swift */,
 				81DA35901FFC00830078598B /* MonkeyTrouble.swift */,
+			);
+			path = WarmUp1;
+			sourceTree = "<group>";
+		};
+		81C1D25A1FFC79C8004A6946 /* WarmUp1 */ = {
+			isa = PBXGroup;
+			children = (
+				81C1D2561FFC7913004A6946 /* SleepInTests.swift */,
+				81C1D2581FFC795E004A6946 /* MonkeyTroubleTests.swift */,
 			);
 			path = WarmUp1;
 			sourceTree = "<group>";
@@ -237,11 +248,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81C1D2571FFC7913004A6946 /* SleepInTests.swift in Sources */,
 				81DA35951FFC3F0F0078598B /* MonkeyTrouble.swift in Sources */,
-				05B6A80F1FEE79C9000D96F0 /* WarmUp1Tests.swift in Sources */,
 				05B6A8191FEE7A94000D96F0 /* SolveWarmUp1.swift in Sources */,
 				05B6A8211FEE7D37000D96F0 /* AnsweredWarmUp1.swift in Sources */,
 				05B6A8271FEE811A000D96F0 /* TestSubject.swift in Sources */,
+				81C1D2591FFC795E004A6946 /* MonkeyTroubleTests.swift in Sources */,
 				05B6A81C1FEE7C3E000D96F0 /* SleepIn.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
