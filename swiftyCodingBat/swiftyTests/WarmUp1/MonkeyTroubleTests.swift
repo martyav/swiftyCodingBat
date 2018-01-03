@@ -25,8 +25,9 @@ class MonkeyTroubleTests: XCTestCase {
         let bIsSmiling = false
         
         let testCase = testSubject.monkeyTrouble(aIsSmiling, bIsSmiling)
+        let knownCorrectAnswer = correctCode.monkeyTrouble(aIsSmiling, bIsSmiling)
         
-        XCTAssert(testCase == true)
+        XCTAssert(testCase == knownCorrectAnswer)
     }
     
     func testMonkeyTroubleBothTrue() {
@@ -34,8 +35,9 @@ class MonkeyTroubleTests: XCTestCase {
         let bIsSmiling = true
         
         let testCase = testSubject.monkeyTrouble(aIsSmiling, bIsSmiling)
+        let knownCorrectAnswer = correctCode.monkeyTrouble(aIsSmiling, bIsSmiling)
         
-        XCTAssert(testCase == true)
+        XCTAssert(testCase == knownCorrectAnswer)
     }
     
     func testMonkeyTroubleFalseTrue() {
@@ -43,8 +45,9 @@ class MonkeyTroubleTests: XCTestCase {
         let bIsSmiling = true
         
         let testCase = testSubject.monkeyTrouble(aIsSmiling, bIsSmiling)
+        let knownCorrectAnswer = correctCode.monkeyTrouble(aIsSmiling, bIsSmiling)
         
-        XCTAssert(testCase == false)
+        XCTAssert(testCase == knownCorrectAnswer)
     }
     
     func testMonkeyTroubleTrueFalse() {
@@ -52,8 +55,9 @@ class MonkeyTroubleTests: XCTestCase {
         let bIsSmiling = false
         
         let testCase = testSubject.monkeyTrouble(aIsSmiling, bIsSmiling)
+        let knownCorrectAnswer = correctCode.monkeyTrouble(aIsSmiling, bIsSmiling)
         
-        XCTAssert(testCase == false)
+        XCTAssert(testCase == knownCorrectAnswer)
     }
 
 }

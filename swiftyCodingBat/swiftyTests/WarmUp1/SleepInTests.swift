@@ -25,8 +25,9 @@ class SleepInTests: XCTestCase {
         let onVacation = false
         
         let testCase = testSubject.sleepIn(isWeekDay, onVacation)
+        let knownCorrectAnswer = correctCode.sleepIn(isWeekDay, onVacation)
         
-        XCTAssert(testCase == true)
+        XCTAssert(testCase == knownCorrectAnswer)
     }
     
     func testSleepInBothTrue() {
@@ -34,8 +35,9 @@ class SleepInTests: XCTestCase {
         let onVacation = true
         
         let testCase = testSubject.sleepIn(isWeekDay, onVacation)
+        let knownCorrectAnswer = correctCode.sleepIn(isWeekDay, onVacation)
         
-        XCTAssert(testCase == true)
+        XCTAssert(testCase == knownCorrectAnswer)
     }
     
     func testSleepInFalseTrue() {
@@ -43,8 +45,9 @@ class SleepInTests: XCTestCase {
         let onVacation = true
         
         let testCase = testSubject.sleepIn(isWeekDay, onVacation)
+        let knownCorrectAnswer = correctCode.sleepIn(isWeekDay, onVacation)
         
-        XCTAssert(testCase == true)
+        XCTAssert(testCase == knownCorrectAnswer)
     }
     
     func testSleepInTrueFalse() {
@@ -52,8 +55,9 @@ class SleepInTests: XCTestCase {
         let onVacation = false
         
         let testCase = testSubject.sleepIn(isWeekDay, onVacation)
+        let knownCorrectAnswer = correctCode.sleepIn(isWeekDay, onVacation)
         
-        XCTAssert(testCase == false)
+        XCTAssert(testCase == knownCorrectAnswer)
     }
 
 
