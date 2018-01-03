@@ -35,7 +35,7 @@ class SleepInTests: XCTestCase {
         
         let testCase = testSubject.sleepIn(isWeekDay, onVacation)
         
-        XCTAssert(testCase == false)
+        XCTAssert(testCase == true)
     }
     
     func testSleepInFalseTrue() {
