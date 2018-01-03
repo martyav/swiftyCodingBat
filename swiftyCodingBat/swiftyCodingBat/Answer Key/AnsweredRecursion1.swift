@@ -10,6 +10,8 @@ import Foundation
 
 class AnsweredRecursion1: TestSubject {}
 
+// MARK: - Factorial
+
 extension AnsweredRecursion1: Factorial {
     /*
      As per Coding Bat, the tests will never give us a value less than 1.
@@ -26,6 +28,8 @@ extension AnsweredRecursion1: Factorial {
     }
 }
 
+// MARK: - BunnyEars
+
 extension AnsweredRecursion1: BunnyEars {
     func bunnyEars(_ bunnies: Int) -> Int {
         guard bunnies != 0 else {
@@ -33,5 +37,21 @@ extension AnsweredRecursion1: BunnyEars {
         }
         
         return 2 + bunnyEars(bunnies - 1)
+    }
+}
+
+// MARK: - Fibonacci
+
+extension AnsweredRecursion1: Fibonacci {
+    func fibonacci(_ n: Int) -> Int {
+        guard n != 0 else {
+            return 0
+        }
+        
+        guard n != 1 else {
+            return 1
+        }
+        
+        return fibonacci(n - 1) + fibonacci(n - 2)
     }
 }

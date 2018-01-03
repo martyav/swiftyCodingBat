@@ -10,11 +10,15 @@ import Foundation
 
 class AnsweredWarmUp1: TestSubject {}
 
+// MARK: - SleepIn
+
 extension AnsweredWarmUp1: SleepIn {
     func sleepIn(_ weekday: Bool, _ vacation: Bool) -> Bool {
         return !weekday || vacation
     }
 }
+
+// MARK: - MonkeyTrouble
 
 extension AnsweredWarmUp1: MonkeyTrouble {
     func monkeyTrouble(_ a: Bool, _ b: Bool) -> Bool {

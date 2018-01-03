@@ -9,55 +9,46 @@
 import XCTest
 @testable import swiftyCodingBat
 
-class MonkeyTroubleTests: XCTestCase {
-    var testSubject: SolveWarmUp1!
-    var correctCode: AnsweredWarmUp1!
-    
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-        self.testSubject = SolveWarmUp1()
-        self.correctCode = AnsweredWarmUp1()
-    }
+class MonkeyTroubleTests: WarmUp1TestParentClass {
     
     func testMonkeyTroubleBothFalse() {
         let aIsSmiling = false
         let bIsSmiling = false
         
-        let testCase = testSubject.monkeyTrouble(aIsSmiling, bIsSmiling)
+        let experiment = testSubject.monkeyTrouble(aIsSmiling, bIsSmiling)
         let knownCorrectAnswer = correctCode.monkeyTrouble(aIsSmiling, bIsSmiling)
         
-        XCTAssert(testCase == knownCorrectAnswer)
+        XCTAssert(experiment == knownCorrectAnswer)
     }
     
     func testMonkeyTroubleBothTrue() {
         let aIsSmiling = true
         let bIsSmiling = true
         
-        let testCase = testSubject.monkeyTrouble(aIsSmiling, bIsSmiling)
+        let experiment = testSubject.monkeyTrouble(aIsSmiling, bIsSmiling)
         let knownCorrectAnswer = correctCode.monkeyTrouble(aIsSmiling, bIsSmiling)
         
-        XCTAssert(testCase == knownCorrectAnswer)
+        XCTAssert(experiment == knownCorrectAnswer)
     }
     
     func testMonkeyTroubleFalseTrue() {
         let aIsSmiling = false
         let bIsSmiling = true
         
-        let testCase = testSubject.monkeyTrouble(aIsSmiling, bIsSmiling)
+        let experiment = testSubject.monkeyTrouble(aIsSmiling, bIsSmiling)
         let knownCorrectAnswer = correctCode.monkeyTrouble(aIsSmiling, bIsSmiling)
         
-        XCTAssert(testCase == knownCorrectAnswer)
+        XCTAssert(experiment == knownCorrectAnswer)
     }
     
     func testMonkeyTroubleTrueFalse() {
         let aIsSmiling = true
         let bIsSmiling = false
         
-        let testCase = testSubject.monkeyTrouble(aIsSmiling, bIsSmiling)
+        let experiment = testSubject.monkeyTrouble(aIsSmiling, bIsSmiling)
         let knownCorrectAnswer = correctCode.monkeyTrouble(aIsSmiling, bIsSmiling)
         
-        XCTAssert(testCase == knownCorrectAnswer)
+        XCTAssert(experiment == knownCorrectAnswer)
     }
 
 }
