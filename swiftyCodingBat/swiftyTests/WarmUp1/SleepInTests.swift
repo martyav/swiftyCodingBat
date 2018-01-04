@@ -10,45 +10,57 @@ import XCTest
 @testable import swiftyCodingBat
 
 class SleepInTests: WarmUp1TestParentClass {
+    func checkAnswerFor(valueA: Bool, valueB: Bool) -> Bool {
+        let experiment = testSubject.sleepIn(valueA, valueB)
+        let knownCorrectAnswer = correctCode.sleepIn(valueA, valueB)
+        
+        return experiment == knownCorrectAnswer
+    }
+    
+    func revealCorrectAnswerFor(valueA: Bool, valueB: Bool) -> String {
+        let knownCorrectAnswer = correctCode.sleepIn(valueA, valueB)
+        
+        return "Function should equal \(knownCorrectAnswer)"
+    }
     
     func testBothArguementsAreFalse() {
         let isWeekDay = false
         let onVacation = false
         
-        let experiment = testSubject.sleepIn(isWeekDay, onVacation)
-        let knownCorrectAnswer = correctCode.sleepIn(isWeekDay, onVacation)
+        let userAnswerEqualsCorrectAnswer = checkAnswerFor(valueA: isWeekDay, valueB: onVacation)
+        let ifNotStateWhy = revealCorrectAnswerFor(valueA: isWeekDay, valueB: onVacation)
         
-        XCTAssert(experiment == knownCorrectAnswer, "Function should equal \(knownCorrectAnswer)")
+        XCTAssert(userAnswerEqualsCorrectAnswer, ifNotStateWhy)
     }
     
     func testBothArguementsAreTrue() {
         let isWeekDay = true
         let onVacation = true
         
-        let experiment = testSubject.sleepIn(isWeekDay, onVacation)
-        let knownCorrectAnswer = correctCode.sleepIn(isWeekDay, onVacation)
+        let userAnswerEqualsCorrectAnswer = checkAnswerFor(valueA: isWeekDay, valueB: onVacation)
+        let ifNotStateWhy = revealCorrectAnswerFor(valueA: isWeekDay, valueB: onVacation)
         
-        XCTAssert(experiment == knownCorrectAnswer, "Function should equal \(knownCorrectAnswer)")
+        XCTAssert(userAnswerEqualsCorrectAnswer, ifNotStateWhy)
     }
     
     func testWeekdayIsFalseVacationIsTrue() {
         let isWeekDay = false
         let onVacation = true
         
-        let experiment = testSubject.sleepIn(isWeekDay, onVacation)
-        let knownCorrectAnswer = correctCode.sleepIn(isWeekDay, onVacation)
+        let userAnswerEqualsCorrectAnswer = checkAnswerFor(valueA: isWeekDay, valueB: onVacation)
+        let ifNotStateWhy = revealCorrectAnswerFor(valueA: isWeekDay, valueB: onVacation)
         
-        XCTAssert(experiment == knownCorrectAnswer, "Function should equal \(knownCorrectAnswer)")
+        XCTAssert(userAnswerEqualsCorrectAnswer, ifNotStateWhy)
     }
     
     func testWeekdayIsTrueVacationIsFalse() {
         let isWeekDay = true
         let onVacation = false
         
-        let experiment = testSubject.sleepIn(isWeekDay, onVacation)
-        let knownCorrectAnswer = correctCode.sleepIn(isWeekDay, onVacation)
+        let userAnswerEqualsCorrectAnswer = checkAnswerFor(valueA: isWeekDay, valueB: onVacation)
+        let ifNotStateWhy = revealCorrectAnswerFor(valueA: isWeekDay, valueB: onVacation)
         
-        XCTAssert(experiment == knownCorrectAnswer, "Function should equal \(knownCorrectAnswer)")
+        XCTAssert(userAnswerEqualsCorrectAnswer, ifNotStateWhy)
     }
 
 

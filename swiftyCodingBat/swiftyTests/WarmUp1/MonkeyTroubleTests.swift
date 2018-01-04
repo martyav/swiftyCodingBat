@@ -10,45 +10,57 @@ import XCTest
 @testable import swiftyCodingBat
 
 class MonkeyTroubleTests: WarmUp1TestParentClass {
+    func checkAnswerFor(valueA: Bool, valueB: Bool) -> Bool {
+        let experiment = testSubject.monkeyTrouble(valueA, valueB)
+        let knownCorrectAnswer = correctCode.monkeyTrouble(valueA, valueB)
+        
+        return experiment == knownCorrectAnswer
+    }
+    
+    func revealCorrectAnswerFor(valueA: Bool, valueB: Bool) -> String {
+        let knownCorrectAnswer = correctCode.monkeyTrouble(valueA, valueB)
+        
+        return "Function should equal \(knownCorrectAnswer)"
+    }
     
     func testBothArguementsAreFalse() {
         let aIsSmiling = false
         let bIsSmiling = false
         
-        let experiment = testSubject.monkeyTrouble(aIsSmiling, bIsSmiling)
-        let knownCorrectAnswer = correctCode.monkeyTrouble(aIsSmiling, bIsSmiling)
+        let userAnswerEqualsCorrectAnswer = checkAnswerFor(valueA: aIsSmiling, valueB: bIsSmiling)
+        let ifNotStateWhy = revealCorrectAnswerFor(valueA: aIsSmiling, valueB: bIsSmiling)
         
-        XCTAssert(experiment == knownCorrectAnswer, "Function should equal \(knownCorrectAnswer)")
+        XCTAssert(userAnswerEqualsCorrectAnswer, ifNotStateWhy)
     }
     
     func testBothArguementsAreTrue() {
         let aIsSmiling = true
         let bIsSmiling = true
         
-        let experiment = testSubject.monkeyTrouble(aIsSmiling, bIsSmiling)
-        let knownCorrectAnswer = correctCode.monkeyTrouble(aIsSmiling, bIsSmiling)
-        
-        XCTAssert(experiment == knownCorrectAnswer, "Function should equal \(knownCorrectAnswer)")
+        let userAnswerEqualsCorrectAnswer = checkAnswerFor(valueA: aIsSmiling, valueB: bIsSmiling)
+        let ifNotStateWhy = revealCorrectAnswerFor(valueA: aIsSmiling, valueB: bIsSmiling)
+
+        XCTAssert(userAnswerEqualsCorrectAnswer, ifNotStateWhy)
     }
     
     func testAIsFalseTBIsTrue() {
         let aIsSmiling = false
         let bIsSmiling = true
         
-        let experiment = testSubject.monkeyTrouble(aIsSmiling, bIsSmiling)
-        let knownCorrectAnswer = correctCode.monkeyTrouble(aIsSmiling, bIsSmiling)
-        
-        XCTAssert(experiment == knownCorrectAnswer, "Function should equal \(knownCorrectAnswer)")
+        let userAnswerEqualsCorrectAnswer = checkAnswerFor(valueA: aIsSmiling, valueB: bIsSmiling)
+        let ifNotStateWhy = revealCorrectAnswerFor(valueA: aIsSmiling, valueB: bIsSmiling)
+
+        XCTAssert(userAnswerEqualsCorrectAnswer, ifNotStateWhy)
     }
     
     func testAIsTrueBIsFalse() {
         let aIsSmiling = true
         let bIsSmiling = false
         
-        let experiment = testSubject.monkeyTrouble(aIsSmiling, bIsSmiling)
-        let knownCorrectAnswer = correctCode.monkeyTrouble(aIsSmiling, bIsSmiling)
-        
-        XCTAssert(experiment == knownCorrectAnswer, "Function should equal \(knownCorrectAnswer)")
+        let userAnswerEqualsCorrectAnswer = checkAnswerFor(valueA: aIsSmiling, valueB: bIsSmiling)
+        let ifNotStateWhy = revealCorrectAnswerFor(valueA: aIsSmiling, valueB: bIsSmiling)
+
+        XCTAssert(userAnswerEqualsCorrectAnswer, ifNotStateWhy)
     }
 
 }

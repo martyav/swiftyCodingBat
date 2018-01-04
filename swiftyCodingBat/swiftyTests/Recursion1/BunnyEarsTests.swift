@@ -24,73 +24,73 @@ class BunnyEarsTests: Recursion1TestParentClass {
     }
     
     func testPassedIn0() {
-        let n = 0
-        let userAnswerEqualsCorrectAnswer = checkAnswerFor(value: n)
-        let ifNotStateWhy = revealCorrectAnswerFor(value: n)
+        let bunnies = 0
+        let userAnswerEqualsCorrectAnswer = checkAnswerFor(value: bunnies)
+        let ifNotStateWhy = revealCorrectAnswerFor(value: bunnies)
         
         XCTAssert(userAnswerEqualsCorrectAnswer, ifNotStateWhy)
     }
     
     func testPassedIn1() {
-        let n = 1
-        let userAnswerEqualsCorrectAnswer = checkAnswerFor(value: n)
-        let ifNotStateWhy = revealCorrectAnswerFor(value: n)
+        let bunnies = 1
+        let userAnswerEqualsCorrectAnswer = checkAnswerFor(value: bunnies)
+        let ifNotStateWhy = revealCorrectAnswerFor(value: bunnies)
         
         XCTAssert(userAnswerEqualsCorrectAnswer, ifNotStateWhy)
     }
     
     func testPassedIn2() {
-        let n = 2
-        let userAnswerEqualsCorrectAnswer = checkAnswerFor(value: n)
-        let ifNotStateWhy = revealCorrectAnswerFor(value: n)
+        let bunnies = 2
+        let userAnswerEqualsCorrectAnswer = checkAnswerFor(value: bunnies)
+        let ifNotStateWhy = revealCorrectAnswerFor(value: bunnies)
         
         XCTAssert(userAnswerEqualsCorrectAnswer, ifNotStateWhy)
     }
     
     func testPassedIn3() {
-        let n = 3
-        let userAnswerEqualsCorrectAnswer = checkAnswerFor(value: n)
-        let ifNotStateWhy = revealCorrectAnswerFor(value: n)
+        let bunnies = 3
+        let userAnswerEqualsCorrectAnswer = checkAnswerFor(value: bunnies)
+        let ifNotStateWhy = revealCorrectAnswerFor(value: bunnies)
         
         XCTAssert(userAnswerEqualsCorrectAnswer, ifNotStateWhy)
     }
     
     func testPassedIn4() {
-        let n = 4
-        let userAnswerEqualsCorrectAnswer = checkAnswerFor(value: n)
-        let ifNotStateWhy = revealCorrectAnswerFor(value: n)
+        let bunnies = 4
+        let userAnswerEqualsCorrectAnswer = checkAnswerFor(value: bunnies)
+        let ifNotStateWhy = revealCorrectAnswerFor(value: bunnies)
         
         XCTAssert(userAnswerEqualsCorrectAnswer, ifNotStateWhy)
     }
     
     func testPassedIn5() {
-        let n = 5
-        let userAnswerEqualsCorrectAnswer = checkAnswerFor(value: n)
-        let ifNotStateWhy = revealCorrectAnswerFor(value: n)
+        let bunnies = 5
+        let userAnswerEqualsCorrectAnswer = checkAnswerFor(value: bunnies)
+        let ifNotStateWhy = revealCorrectAnswerFor(value: bunnies)
         
         XCTAssert(userAnswerEqualsCorrectAnswer, ifNotStateWhy)
     }
     
     func testPassedIn6() {
-        let n = 12
-        let userAnswerEqualsCorrectAnswer = checkAnswerFor(value: n)
-        let ifNotStateWhy = revealCorrectAnswerFor(value: n)
+        let bunnies = 12
+        let userAnswerEqualsCorrectAnswer = checkAnswerFor(value: bunnies)
+        let ifNotStateWhy = revealCorrectAnswerFor(value: bunnies)
         
         XCTAssert(userAnswerEqualsCorrectAnswer, ifNotStateWhy)
     }
     
     func testPassedIn50() {
-        let n = 50
-        let userAnswerEqualsCorrectAnswer = checkAnswerFor(value: n)
-        let ifNotStateWhy = revealCorrectAnswerFor(value: n)
+        let bunnies = 50
+        let userAnswerEqualsCorrectAnswer = checkAnswerFor(value: bunnies)
+        let ifNotStateWhy = revealCorrectAnswerFor(value: bunnies)
         
         XCTAssert(userAnswerEqualsCorrectAnswer, ifNotStateWhy)
     }
     
     func testPassedIn254() {
-        let n = 254
-        let userAnswerEqualsCorrectAnswer = checkAnswerFor(value: n)
-        let ifNotStateWhy = revealCorrectAnswerFor(value: n)
+        let bunnies = 254
+        let userAnswerEqualsCorrectAnswer = checkAnswerFor(value: bunnies)
+        let ifNotStateWhy = revealCorrectAnswerFor(value: bunnies)
         
         XCTAssert(userAnswerEqualsCorrectAnswer, ifNotStateWhy)
     }
