@@ -11,44 +11,44 @@ import XCTest
 
 class SleepInTests: WarmUp1TestParentClass {
     
-    func testSleepInBothFalse() {
+    func testBothArguementsAreFalse() {
         let isWeekDay = false
         let onVacation = false
         
         let experiment = testSubject.sleepIn(isWeekDay, onVacation)
         let knownCorrectAnswer = correctCode.sleepIn(isWeekDay, onVacation)
         
-        XCTAssert(experiment == knownCorrectAnswer)
+        XCTAssert(experiment == knownCorrectAnswer, "Function should equal \(knownCorrectAnswer)")
     }
     
-    func testSleepInBothTrue() {
+    func testBothArguementsAreTrue() {
         let isWeekDay = true
         let onVacation = true
         
         let experiment = testSubject.sleepIn(isWeekDay, onVacation)
         let knownCorrectAnswer = correctCode.sleepIn(isWeekDay, onVacation)
         
-        XCTAssert(experiment == knownCorrectAnswer)
+        XCTAssert(experiment == knownCorrectAnswer, "Function should equal \(knownCorrectAnswer)")
     }
     
-    func testSleepInFalseTrue() {
+    func testWeekdayIsFalseVacationIsTrue() {
         let isWeekDay = false
         let onVacation = true
         
         let experiment = testSubject.sleepIn(isWeekDay, onVacation)
         let knownCorrectAnswer = correctCode.sleepIn(isWeekDay, onVacation)
         
-        XCTAssert(experiment == knownCorrectAnswer)
+        XCTAssert(experiment == knownCorrectAnswer, "Function should equal \(knownCorrectAnswer)")
     }
     
-    func testSleepInTrueFalse() {
+    func testWeekdayIsTrueVacationIsFalse() {
         let isWeekDay = true
         let onVacation = false
         
         let experiment = testSubject.sleepIn(isWeekDay, onVacation)
         let knownCorrectAnswer = correctCode.sleepIn(isWeekDay, onVacation)
         
-        XCTAssert(experiment == knownCorrectAnswer)
+        XCTAssert(experiment == knownCorrectAnswer, "Function should equal \(knownCorrectAnswer)")
     }
 
 

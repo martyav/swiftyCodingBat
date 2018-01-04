@@ -11,44 +11,44 @@ import XCTest
 
 class MonkeyTroubleTests: WarmUp1TestParentClass {
     
-    func testMonkeyTroubleBothFalse() {
+    func testBothArguementsAreFalse() {
         let aIsSmiling = false
         let bIsSmiling = false
         
         let experiment = testSubject.monkeyTrouble(aIsSmiling, bIsSmiling)
         let knownCorrectAnswer = correctCode.monkeyTrouble(aIsSmiling, bIsSmiling)
         
-        XCTAssert(experiment == knownCorrectAnswer)
+        XCTAssert(experiment == knownCorrectAnswer, "Function should equal \(knownCorrectAnswer)")
     }
     
-    func testMonkeyTroubleBothTrue() {
+    func testBothArguementsAreTrue() {
         let aIsSmiling = true
         let bIsSmiling = true
         
         let experiment = testSubject.monkeyTrouble(aIsSmiling, bIsSmiling)
         let knownCorrectAnswer = correctCode.monkeyTrouble(aIsSmiling, bIsSmiling)
         
-        XCTAssert(experiment == knownCorrectAnswer)
+        XCTAssert(experiment == knownCorrectAnswer, "Function should equal \(knownCorrectAnswer)")
     }
     
-    func testMonkeyTroubleFalseTrue() {
+    func testAIsFalseTBIsTrue() {
         let aIsSmiling = false
         let bIsSmiling = true
         
         let experiment = testSubject.monkeyTrouble(aIsSmiling, bIsSmiling)
         let knownCorrectAnswer = correctCode.monkeyTrouble(aIsSmiling, bIsSmiling)
         
-        XCTAssert(experiment == knownCorrectAnswer)
+        XCTAssert(experiment == knownCorrectAnswer, "Function should equal \(knownCorrectAnswer)")
     }
     
-    func testMonkeyTroubleTrueFalse() {
+    func testAIsTrueBIsFalse() {
         let aIsSmiling = true
         let bIsSmiling = false
         
         let experiment = testSubject.monkeyTrouble(aIsSmiling, bIsSmiling)
         let knownCorrectAnswer = correctCode.monkeyTrouble(aIsSmiling, bIsSmiling)
         
-        XCTAssert(experiment == knownCorrectAnswer)
+        XCTAssert(experiment == knownCorrectAnswer, "Function should equal \(knownCorrectAnswer)")
     }
 
 }

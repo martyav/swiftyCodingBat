@@ -58,7 +58,7 @@
 		810807271FFD3967004A7246 /* BunnyEarsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BunnyEarsTests.swift; sourceTree = "<group>"; };
 		8108072B1FFD568E004A7246 /* Fibonacci.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fibonacci.swift; sourceTree = "<group>"; };
 		8108072E1FFD59DB004A7246 /* FibonacciTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FibonacciTests.swift; sourceTree = "<group>"; };
-		810807301FFD5AE4004A7246 /* WarmUp1TestParentClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarmUp1TestParentClass.swift; sourceTree = "<group>"; };
+		810807301FFD5AE4004A7246 /* WarmUp1TestParentClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = WarmUp1TestParentClass.swift; sourceTree = "<group>"; };
 		810807331FFD5E17004A7246 /* Recursion1TestParentClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recursion1TestParentClass.swift; sourceTree = "<group>"; };
 		810807381FFD74E4004A7246 /* BunnyEars2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BunnyEars2.swift; sourceTree = "<group>"; };
 		8108073B1FFD783C004A7246 /* BunnyEars2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BunnyEars2Tests.swift; sourceTree = "<group>"; };
@@ -91,7 +91,6 @@
 				05B6A8281FEE883D000D96F0 /* Instructions.md */,
 				05B6A8011FEE7992000D96F0 /* swiftyCodingBat */,
 				05B6A80D1FEE79C9000D96F0 /* swiftyTests */,
-				810807321FFD5DA2004A7246 /* DRY Test Classes */,
 				05B6A8001FEE7992000D96F0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -120,6 +119,7 @@
 		05B6A80D1FEE79C9000D96F0 /* swiftyTests */ = {
 			isa = PBXGroup;
 			children = (
+				810807321FFD5DA2004A7246 /* DRY Test Classes And Protocols */,
 				81C1D25A1FFC79C8004A6946 /* WarmUp1 */,
 				8108071C1FFD2A97004A7246 /* Recursion1 */,
 				05B6A8101FEE79CA000D96F0 /* Info.plist */,
@@ -185,13 +185,13 @@
 			path = Recursion1;
 			sourceTree = "<group>";
 		};
-		810807321FFD5DA2004A7246 /* DRY Test Classes */ = {
+		810807321FFD5DA2004A7246 /* DRY Test Classes And Protocols */ = {
 			isa = PBXGroup;
 			children = (
 				810807301FFD5AE4004A7246 /* WarmUp1TestParentClass.swift */,
 				810807331FFD5E17004A7246 /* Recursion1TestParentClass.swift */,
 			);
-			path = "DRY Test Classes";
+			path = "DRY Test Classes And Protocols";
 			sourceTree = "<group>";
 		};
 		81C1D25A1FFC79C8004A6946 /* WarmUp1 */ = {

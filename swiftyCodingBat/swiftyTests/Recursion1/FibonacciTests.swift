@@ -9,68 +9,80 @@
 import XCTest
 
 class FibonacciTests: Recursion1TestParentClass {
-
-    func testFibonacciZero() {
+    func checkAnswerFor(value: Int) -> Bool {
+        let experiment = testSubject.fibonacci(value)
+        let knownCorrectAnswer = correctCode.fibonacci(value)
+        
+        return experiment == knownCorrectAnswer
+    }
+    
+    func revealCorrectAnswerFor(value: Int) -> String {
+        let knownCorrectAnswer = correctCode.fibonacci(value)
+        
+        return "Function should equal \(knownCorrectAnswer)"
+    }
+    
+    func testPassedIn0() {
         let n = 0
-        let experiment = testSubject.fibonacci(n)
-        let knownCorrectAnswer = correctCode.fibonacci(n)
+        let userAnswerEqualsCorrectAnswer = checkAnswerFor(value: n)
+        let ifNotStateWhy = revealCorrectAnswerFor(value: n)
         
-        XCTAssert(experiment == knownCorrectAnswer, "Function should equal \(knownCorrectAnswer)")
+        XCTAssert(userAnswerEqualsCorrectAnswer, ifNotStateWhy)
     }
     
-    func testFibonacciOne() {
+    func testPassedIn1() {
         let n = 1
-        let experiment = testSubject.fibonacci(n)
-        let knownCorrectAnswer = correctCode.fibonacci(n)
+        let userAnswerEqualsCorrectAnswer = checkAnswerFor(value: n)
+        let ifNotStateWhy = revealCorrectAnswerFor(value: n)
         
-        XCTAssert(experiment == knownCorrectAnswer, "Function should equal \(knownCorrectAnswer)")
+        XCTAssert(userAnswerEqualsCorrectAnswer, ifNotStateWhy)
     }
     
-    func testFibonacciTwo() {
+    func testPassedIn2() {
         let n = 2
-        let experiment = testSubject.fibonacci(n)
-        let knownCorrectAnswer = correctCode.fibonacci(n)
+        let userAnswerEqualsCorrectAnswer = checkAnswerFor(value: n)
+        let ifNotStateWhy = revealCorrectAnswerFor(value: n)
         
-        XCTAssert(experiment == knownCorrectAnswer, "Function should equal \(knownCorrectAnswer)")
+        XCTAssert(userAnswerEqualsCorrectAnswer, ifNotStateWhy)
     }
     
-    func testFibonacciThree() {
+    func testPassedIn3() {
         let n = 3
-        let experiment = testSubject.fibonacci(n)
-        let knownCorrectAnswer = correctCode.fibonacci(n)
+        let userAnswerEqualsCorrectAnswer = checkAnswerFor(value: n)
+        let ifNotStateWhy = revealCorrectAnswerFor(value: n)
         
-        XCTAssert(experiment == knownCorrectAnswer, "Function should equal \(knownCorrectAnswer)")
+        XCTAssert(userAnswerEqualsCorrectAnswer, ifNotStateWhy)
     }
     
-    func testFibonacciFour() {
+    func testPassedIn4() {
         let n = 4
-        let experiment = testSubject.fibonacci(n)
-        let knownCorrectAnswer = correctCode.fibonacci(n)
+        let userAnswerEqualsCorrectAnswer = checkAnswerFor(value: n)
+        let ifNotStateWhy = revealCorrectAnswerFor(value: n)
         
-        XCTAssert(experiment == knownCorrectAnswer, "Function should equal \(knownCorrectAnswer)")
+        XCTAssert(userAnswerEqualsCorrectAnswer, ifNotStateWhy)
     }
     
-    func testFibonacciFive() {
+    func testPassedIn5() {
         let n = 5
-        let experiment = testSubject.fibonacci(n)
-        let knownCorrectAnswer = correctCode.fibonacci(n)
+        let userAnswerEqualsCorrectAnswer = checkAnswerFor(value: n)
+        let ifNotStateWhy = revealCorrectAnswerFor(value: n)
         
-        XCTAssert(experiment == knownCorrectAnswer, "Function should equal \(knownCorrectAnswer)")
+        XCTAssert(userAnswerEqualsCorrectAnswer, ifNotStateWhy)
     }
     
-    func testFibonacciSix() {
+    func testPassedIn6() {
         let n = 6
-        let experiment = testSubject.fibonacci(n)
-        let knownCorrectAnswer = correctCode.fibonacci(n)
+        let userAnswerEqualsCorrectAnswer = checkAnswerFor(value: n)
+        let ifNotStateWhy = revealCorrectAnswerFor(value: n)
         
-        XCTAssert(experiment == knownCorrectAnswer, "Function should equal \(knownCorrectAnswer)")
+        XCTAssert(userAnswerEqualsCorrectAnswer, ifNotStateWhy)
     }
     
-    func testFibonacciSeven() {
+    func testPassedIn7() {
         let n = 7
-        let experiment = testSubject.fibonacci(n)
-        let knownCorrectAnswer = correctCode.fibonacci(n)
+        let userAnswerEqualsCorrectAnswer = checkAnswerFor(value: n)
+        let ifNotStateWhy = revealCorrectAnswerFor(value: n)
         
-        XCTAssert(experiment == knownCorrectAnswer, "Function should equal \(knownCorrectAnswer)")
+        XCTAssert(userAnswerEqualsCorrectAnswer, ifNotStateWhy)
     }
 }

@@ -11,75 +11,89 @@ import Foundation
 import XCTest
 @testable import swiftyCodingBat
 
-class FactorialTests: Recursion1TestParentClass {
-    func testFactorialOne() {
+class FactorialTests: Recursion1TestParentClass {    
+    func checkAnswerFor(value: Int) -> Bool {
+        let experiment = testSubject.factorial(value)
+        let knownCorrectAnswer = correctCode.factorial(value)
+        
+        return experiment == knownCorrectAnswer
+    }
+    
+    func revealCorrectAnswerFor(value: Int) -> String {
+        let knownCorrectAnswer = correctCode.factorial(value)
+        
+        return "Function should equal \(knownCorrectAnswer)"
+    }
+    
+    func testPassedIn1() {
         let n = 1
-        let experiment = testSubject.factorial(n)
+        let userAnswerEqualsCorrectAnswer = checkAnswerFor(value: n)
+        let ifNotStateWhy = revealCorrectAnswerFor(value: n)
         
-        XCTAssert(experiment == 1, "Function should equal 1")
+        XCTAssert(userAnswerEqualsCorrectAnswer, ifNotStateWhy)
     }
     
-    func testFactorialTwo() {
+    func testPassedIn2() {
         let n = 2
-        let experiment = testSubject.factorial(n)
-        let knownCorrectAnswer = correctCode.factorial(n)
+        let userAnswerEqualsCorrectAnswer = checkAnswerFor(value: n)
+        let ifNotStateWhy = revealCorrectAnswerFor(value: n)
         
-        XCTAssert(experiment == knownCorrectAnswer, "Function should equal \(knownCorrectAnswer)")
+        XCTAssert(userAnswerEqualsCorrectAnswer, ifNotStateWhy)
     }
     
-    func testFactorialThree() {
+    func testPassedIn3() {
         let n = 3
-        let experiment = testSubject.factorial(n)
-        let knownCorrectAnswer = correctCode.factorial(n)
+        let userAnswerEqualsCorrectAnswer = checkAnswerFor(value: n)
+        let ifNotStateWhy = revealCorrectAnswerFor(value: n)
         
-        XCTAssert(experiment == knownCorrectAnswer, "Function should equal \(knownCorrectAnswer)")
+        XCTAssert(userAnswerEqualsCorrectAnswer, ifNotStateWhy)
     }
     
-    func testFactorialFour() {
+    func testPassedIn4() {
         let n = 4
-        let experiment = testSubject.factorial(n)
-        let knownCorrectAnswer = correctCode.factorial(n)
+        let userAnswerEqualsCorrectAnswer = checkAnswerFor(value: n)
+        let ifNotStateWhy = revealCorrectAnswerFor(value: n)
         
-        XCTAssert(experiment == knownCorrectAnswer, "Function should equal \(knownCorrectAnswer)")
+        XCTAssert(userAnswerEqualsCorrectAnswer, ifNotStateWhy)
     }
     
-    func testFactorialFive() {
+    func testPassedIn5() {
         let n = 5
-        let experiment = testSubject.factorial(n)
-        let knownCorrectAnswer = correctCode.factorial(n)
+        let userAnswerEqualsCorrectAnswer = checkAnswerFor(value: n)
+        let ifNotStateWhy = revealCorrectAnswerFor(value: n)
         
-        XCTAssert(experiment == knownCorrectAnswer, "Function should equal \(knownCorrectAnswer)")
+        XCTAssert(userAnswerEqualsCorrectAnswer, ifNotStateWhy)
     }
     
-    func testFactorialSix() {
+    func testPassedIn6() {
         let n = 6
-        let experiment = testSubject.factorial(n)
-        let knownCorrectAnswer = correctCode.factorial(n)
+        let userAnswerEqualsCorrectAnswer = checkAnswerFor(value: n)
+        let ifNotStateWhy = revealCorrectAnswerFor(value: n)
         
-        XCTAssert(experiment == knownCorrectAnswer, "Function should equal \(knownCorrectAnswer)")
+        XCTAssert(userAnswerEqualsCorrectAnswer, ifNotStateWhy)
     }
     
-    func testFactorialSeven() {
+    func testPassedIn7() {
         let n = 7
-        let experiment = testSubject.factorial(n)
-        let knownCorrectAnswer = correctCode.factorial(n)
+        let userAnswerEqualsCorrectAnswer = checkAnswerFor(value: n)
+        let ifNotStateWhy = revealCorrectAnswerFor(value: n)
         
-        XCTAssert(experiment == knownCorrectAnswer, "Function should equal \(knownCorrectAnswer)")
+        XCTAssert(userAnswerEqualsCorrectAnswer, ifNotStateWhy)
     }
     
-    func testFactorialEight() {
+    func testPassedIn8() {
         let n = 8
-        let experiment = testSubject.factorial(n)
-        let knownCorrectAnswer = correctCode.factorial(n)
+        let userAnswerEqualsCorrectAnswer = checkAnswerFor(value: n)
+        let ifNotStateWhy = revealCorrectAnswerFor(value: n)
         
-        XCTAssert(experiment == knownCorrectAnswer, "Function should equal \(knownCorrectAnswer)")
+        XCTAssert(userAnswerEqualsCorrectAnswer, ifNotStateWhy)
     }
     
-    func testFactorialTwelve() {
+    func testPassedIn12() {
         let n = 12
-        let experiment = testSubject.factorial(n)
-        let knownCorrectAnswer = correctCode.factorial(n)
+        let userAnswerEqualsCorrectAnswer = checkAnswerFor(value: n)
+        let ifNotStateWhy = revealCorrectAnswerFor(value: n)
         
-        XCTAssert(experiment == knownCorrectAnswer, "Function should equal \(knownCorrectAnswer)")
+        XCTAssert(userAnswerEqualsCorrectAnswer, ifNotStateWhy)
     }
 }

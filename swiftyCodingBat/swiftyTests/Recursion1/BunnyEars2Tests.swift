@@ -9,68 +9,80 @@
 import XCTest
 
 class BunnyEars2Tests: Recursion1TestParentClass {
-    
-    func testBunnyEars2Zero() {
-        let bunnies = 0
-        let experiment = testSubject.bunnyEars2(bunnies)
-        let knownCorrectAnswer = correctCode.bunnyEars2(bunnies)
+    func checkAnswerFor(value: Int) -> Bool {
+        let experiment = testSubject.bunnyEars2(value)
+        let knownCorrectAnswer = correctCode.bunnyEars2(value)
         
-        XCTAssert(experiment == knownCorrectAnswer, "Function should equal \(knownCorrectAnswer)")
+        return experiment == knownCorrectAnswer
     }
     
-    func testBunnyEars2One() {
-        let bunnies = 1
-        let experiment = testSubject.bunnyEars2(bunnies)
-        let knownCorrectAnswer = correctCode.bunnyEars2(bunnies)
+    func revealCorrectAnswerFor(value: Int) -> String {
+        let knownCorrectAnswer = correctCode.bunnyEars2(value)
         
-        XCTAssert(experiment == knownCorrectAnswer, "Function should equal \(knownCorrectAnswer)")
+        return "Function should equal \(knownCorrectAnswer)"
     }
     
-    func testBunnyEars2Two() {
-        let bunnies = 2
-        let experiment = testSubject.bunnyEars2(bunnies)
-        let knownCorrectAnswer = correctCode.bunnyEars2(bunnies)
+    func testPassedIn0() {
+        let n = 0
+        let userAnswerEqualsCorrectAnswer = checkAnswerFor(value: n)
+        let ifNotStateWhy = revealCorrectAnswerFor(value: n)
         
-        XCTAssert(experiment == knownCorrectAnswer, "Function should equal \(knownCorrectAnswer)")
+        XCTAssert(userAnswerEqualsCorrectAnswer, ifNotStateWhy)
     }
     
-    func testBunnyEars2Three() {
-        let bunnies = 3
-        let experiment = testSubject.bunnyEars2(bunnies)
-        let knownCorrectAnswer = correctCode.bunnyEars2(bunnies)
+    func testPassedIn1() {
+        let n = 1
+        let userAnswerEqualsCorrectAnswer = checkAnswerFor(value: n)
+        let ifNotStateWhy = revealCorrectAnswerFor(value: n)
         
-        XCTAssert(experiment == knownCorrectAnswer, "Function should equal \(knownCorrectAnswer)")
+        XCTAssert(userAnswerEqualsCorrectAnswer, ifNotStateWhy)
     }
     
-    func testBunnyEarsFour() {
-        let bunnies = 4
-        let experiment = testSubject.bunnyEars2(bunnies)
-        let knownCorrectAnswer = correctCode.bunnyEars2(bunnies)
+    func testPassedIn2() {
+        let n = 2
+        let userAnswerEqualsCorrectAnswer = checkAnswerFor(value: n)
+        let ifNotStateWhy = revealCorrectAnswerFor(value: n)
         
-        XCTAssert(experiment == knownCorrectAnswer, "Function should equal \(knownCorrectAnswer)")
+        XCTAssert(userAnswerEqualsCorrectAnswer, ifNotStateWhy)
     }
     
-    func testBunnyEars2Five() {
-        let bunnies = 5
-        let experiment = testSubject.bunnyEars2(bunnies)
-        let knownCorrectAnswer = correctCode.bunnyEars2(bunnies)
+    func testPassedIn3() {
+        let n = 3
+        let userAnswerEqualsCorrectAnswer = checkAnswerFor(value: n)
+        let ifNotStateWhy = revealCorrectAnswerFor(value: n)
         
-        XCTAssert(experiment == knownCorrectAnswer, "Function should equal \(knownCorrectAnswer)")
+        XCTAssert(userAnswerEqualsCorrectAnswer, ifNotStateWhy)
     }
     
-    func testBunnyEars2Six() {
-        let bunnies = 6
-        let experiment = testSubject.bunnyEars2(bunnies)
-        let knownCorrectAnswer = correctCode.bunnyEars2(bunnies)
+    func testPassedIn4() {
+        let n = 4
+        let userAnswerEqualsCorrectAnswer = checkAnswerFor(value: n)
+        let ifNotStateWhy = revealCorrectAnswerFor(value: n)
         
-        XCTAssert(experiment == knownCorrectAnswer, "Function should equal \(knownCorrectAnswer)")
+        XCTAssert(userAnswerEqualsCorrectAnswer, ifNotStateWhy)
     }
     
-    func testBunnyEars2Ten() {
-        let bunnies = 10
-        let experiment = testSubject.bunnyEars2(bunnies)
-        let knownCorrectAnswer = correctCode.bunnyEars2(bunnies)
+    func testPassedIn5() {
+        let n = 5
+        let userAnswerEqualsCorrectAnswer = checkAnswerFor(value: n)
+        let ifNotStateWhy = revealCorrectAnswerFor(value: n)
         
-        XCTAssert(experiment == knownCorrectAnswer, "Function should equal \(knownCorrectAnswer)")
+        XCTAssert(userAnswerEqualsCorrectAnswer, ifNotStateWhy)
+    }
+    
+    func testPassedIn6() {
+        let n = 6
+        let userAnswerEqualsCorrectAnswer = checkAnswerFor(value: n)
+        let ifNotStateWhy = revealCorrectAnswerFor(value: n)
+        
+        XCTAssert(userAnswerEqualsCorrectAnswer, ifNotStateWhy)
+    }
+    
+    func testPassedIn10() {
+        let n = 10
+        let userAnswerEqualsCorrectAnswer = checkAnswerFor(value: n)
+        let ifNotStateWhy = revealCorrectAnswerFor(value: n)
+        
+        XCTAssert(userAnswerEqualsCorrectAnswer, ifNotStateWhy)
     }
 }
