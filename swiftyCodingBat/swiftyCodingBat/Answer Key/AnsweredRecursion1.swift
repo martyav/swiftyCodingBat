@@ -67,3 +67,15 @@ extension AnsweredRecursion1: BunnyEars2 {
         return 2 + bunnyEars2(bunnies - 1)
     }
 }
+
+// MARK: - Triangle
+
+extension AnsweredRecursion1: Triangle {
+    func triangle(_ rows: Int) -> Int {
+        guard rows >= 2 else {
+            return rows
+        }
+        
+        return rows + triangle(rows - 1)
+    }
+}

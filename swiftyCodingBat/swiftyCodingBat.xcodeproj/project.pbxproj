@@ -38,6 +38,9 @@
 		81C1D2591FFC795E004A6946 /* MonkeyTroubleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C1D2581FFC795E004A6946 /* MonkeyTroubleTests.swift */; };
 		81DA35911FFC00830078598B /* MonkeyTrouble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DA35901FFC00830078598B /* MonkeyTrouble.swift */; };
 		81DA35951FFC3F0F0078598B /* MonkeyTrouble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DA35901FFC00830078598B /* MonkeyTrouble.swift */; };
+		81DB61FC2001ADF400D2A047 /* Triangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DB61FB2001ADF400D2A047 /* Triangle.swift */; };
+		81DB61FD2001ADF400D2A047 /* Triangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DB61FB2001ADF400D2A047 /* Triangle.swift */; };
+		81DB61FF2001AFA100D2A047 /* TriangleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DB61FE2001AFA100D2A047 /* TriangleTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +68,8 @@
 		81C1D2561FFC7913004A6946 /* SleepInTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepInTests.swift; sourceTree = "<group>"; };
 		81C1D2581FFC795E004A6946 /* MonkeyTroubleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonkeyTroubleTests.swift; sourceTree = "<group>"; };
 		81DA35901FFC00830078598B /* MonkeyTrouble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonkeyTrouble.swift; sourceTree = "<group>"; };
+		81DB61FB2001ADF400D2A047 /* Triangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Triangle.swift; sourceTree = "<group>"; };
+		81DB61FE2001AFA100D2A047 /* TriangleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriangleTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +175,7 @@
 				810807241FFD378E004A7246 /* BunnyEars.swift */,
 				8108072B1FFD568E004A7246 /* Fibonacci.swift */,
 				810807381FFD74E4004A7246 /* BunnyEars2.swift */,
+				81DB61FB2001ADF400D2A047 /* Triangle.swift */,
 			);
 			path = Recursion1;
 			sourceTree = "<group>";
@@ -181,6 +187,7 @@
 				810807271FFD3967004A7246 /* BunnyEarsTests.swift */,
 				8108072E1FFD59DB004A7246 /* FibonacciTests.swift */,
 				8108073B1FFD783C004A7246 /* BunnyEars2Tests.swift */,
+				81DB61FE2001AFA100D2A047 /* TriangleTests.swift */,
 			);
 			path = Recursion1;
 			sourceTree = "<group>";
@@ -305,6 +312,7 @@
 				8108072C1FFD568E004A7246 /* Fibonacci.swift in Sources */,
 				81DA35911FFC00830078598B /* MonkeyTrouble.swift in Sources */,
 				05B6A8261FEE811A000D96F0 /* TestSubject.swift in Sources */,
+				81DB61FC2001ADF400D2A047 /* Triangle.swift in Sources */,
 				8108071A1FFD2A8F004A7246 /* AnsweredRecursion1.swift in Sources */,
 				05B6A8201FEE7D37000D96F0 /* AnsweredWarmUp1.swift in Sources */,
 				05B6A8181FEE7A94000D96F0 /* SolveWarmUp1.swift in Sources */,
@@ -327,9 +335,11 @@
 				05B6A8191FEE7A94000D96F0 /* SolveWarmUp1.swift in Sources */,
 				8108071F1FFD2AF0004A7246 /* Factorial.swift in Sources */,
 				05B6A8211FEE7D37000D96F0 /* AnsweredWarmUp1.swift in Sources */,
+				81DB61FD2001ADF400D2A047 /* Triangle.swift in Sources */,
 				8108071B1FFD2A8F004A7246 /* AnsweredRecursion1.swift in Sources */,
 				8108073C1FFD783C004A7246 /* BunnyEars2Tests.swift in Sources */,
 				810807351FFD5ED5004A7246 /* WarmUp1TestParentClass.swift in Sources */,
+				81DB61FF2001AFA100D2A047 /* TriangleTests.swift in Sources */,
 				810807171FFD2A42004A7246 /* SolveRecursion1.swift in Sources */,
 				05B6A8271FEE811A000D96F0 /* TestSubject.swift in Sources */,
 				810807281FFD3967004A7246 /* BunnyEarsTests.swift in Sources */,
