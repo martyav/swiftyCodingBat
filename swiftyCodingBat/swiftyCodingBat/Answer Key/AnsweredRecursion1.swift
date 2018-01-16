@@ -79,3 +79,15 @@ extension AnsweredRecursion1: Triangle {
         return rows + triangle(rows - 1)
     }
 }
+
+// MARK: - SumDigits
+
+extension AnsweredRecursion1: SumDigits {
+    func sumDigits(_ n: Int) -> Int {
+        guard n > 10 else {
+            return n
+        }
+        
+        return (n % 10) + sumDigits(n/10)
+    }
+}

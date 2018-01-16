@@ -114,3 +114,24 @@ extension SolveRecursion1: Triangle {
         return 0
     }
 }
+
+// MARK: - Solve 'SumDigits'
+
+extension SolveRecursion1: SumDigits {
+    /*
+     http://codingbat.com/prob/p163932
+     
+     Given a non-negative int n, return the sum of its digits recursively (no loops). Note that mod (%) by 10 yields the rightmost digit (126 % 10 is 6), while divide (/) by 10 removes the rightmost digit (126 / 10 is 12).
+     
+     
+     sumDigits(126) → 9
+     sumDigits(49) → 13
+     sumDigits(12) → 3
+     */
+    
+    func sumDigits(_ n: Int) -> Int {
+        // ⚠️  Remove this return statement & provide your own code
+        
+        return 0
+    }
+}
