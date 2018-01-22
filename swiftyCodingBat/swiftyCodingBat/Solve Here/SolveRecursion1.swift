@@ -135,3 +135,24 @@ extension SolveRecursion1: SumDigits {
         return 0
     }
 }
+
+// MARK: - Solve 'NestParentheses'
+
+extension SolveRecursion1: NestParentheses {
+    /*
+     http://codingbat.com/prob/p183174
+     
+     Given a string, return true if it is a nesting of zero or more pairs of parenthesis, like "(())" or "((()))". Suggestion: check the first and last chars, and then recur on what's inside them.
+     
+     
+     nestParen("(())") → true
+     nestParen("((()))") → true
+     nestParen("(((x))") → false
+     */
+    
+    func nestParentheses(_ string: String) -> Bool {
+        // ⚠️  Remove this return statement & provide your own code
+        
+        return false
+    }
+}

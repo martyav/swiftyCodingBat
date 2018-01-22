@@ -91,3 +91,27 @@ extension AnsweredRecursion1: SumDigits {
         return (n % 10) + sumDigits(n/10)
     }
 }
+
+// MARK: - NestParentheses
+
+extension AnsweredRecursion1: NestParentheses {
+    func nestParentheses(_ string: String) -> Bool {
+        guard string.count != 0 else {
+            return true
+        }
+        
+        if string.first! == Character("(") {
+            if string.last! == Character(")") {
+                let start = string.index(after: string.startIndex)
+                let end = string.index(before: string.endIndex)
+                let range = start..<end
+                print(String(string[range]))
+                return nestParentheses(String(string[range]))
+            } else {
+                return false
+            }
+        }
+        
+        return false
+    }
+}
