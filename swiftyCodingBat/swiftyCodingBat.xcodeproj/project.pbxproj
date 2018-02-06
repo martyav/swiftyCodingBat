@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05A117E5202954B90048511C /* Count7.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A117E4202954B90048511C /* Count7.swift */; };
+		05A117E6202954B90048511C /* Count7.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A117E4202954B90048511C /* Count7.swift */; };
+		05A117E82029572A0048511C /* Count7Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A117E72029572A0048511C /* Count7Tests.swift */; };
 		05B6A8181FEE7A94000D96F0 /* SolveWarmUp1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B6A8171FEE7A94000D96F0 /* SolveWarmUp1.swift */; };
 		05B6A8191FEE7A94000D96F0 /* SolveWarmUp1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B6A8171FEE7A94000D96F0 /* SolveWarmUp1.swift */; };
 		05B6A81B1FEE7C3E000D96F0 /* SleepIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B6A81A1FEE7C3E000D96F0 /* SleepIn.swift */; };
@@ -58,6 +61,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		05A117E4202954B90048511C /* Count7.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Count7.swift; sourceTree = "<group>"; };
+		05A117E72029572A0048511C /* Count7Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Count7Tests.swift; sourceTree = "<group>"; };
 		05B6A7FF1FEE7992000D96F0 /* swiftyCodingBat.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = swiftyCodingBat.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		05B6A8021FEE7992000D96F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		05B6A80C1FEE79C9000D96F0 /* swiftyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = swiftyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -204,6 +209,7 @@
 				810807381FFD74E4004A7246 /* BunnyEars2.swift */,
 				81DB61FB2001ADF400D2A047 /* Triangle.swift */,
 				8120C7C5200D9010003D5F74 /* SumDigits.swift */,
+				05A117E4202954B90048511C /* Count7.swift */,
 				816287DF201577920078D0FF /* NestParentheses.swift */,
 			);
 			path = Recursion1;
@@ -219,6 +225,7 @@
 				81DB61FE2001AFA100D2A047 /* TriangleTests.swift */,
 				8120C7C8200D91DA003D5F74 /* SumDigitsTests.swift */,
 				816287E220157B400078D0FF /* NestParenthesesTests.swift */,
+				05A117E72029572A0048511C /* Count7Tests.swift */,
 			);
 			path = Recursion1;
 			sourceTree = "<group>";
@@ -366,6 +373,7 @@
 				05B6A8201FEE7D37000D96F0 /* AnsweredWarmUp1.swift in Sources */,
 				05B6A8181FEE7A94000D96F0 /* SolveWarmUp1.swift in Sources */,
 				810807161FFD2A42004A7246 /* SolveRecursion1.swift in Sources */,
+				05A117E5202954B90048511C /* Count7.swift in Sources */,
 				8120C7C6200D9010003D5F74 /* SumDigits.swift in Sources */,
 				810807251FFD378E004A7246 /* BunnyEars.swift in Sources */,
 				05B6A81B1FEE7C3E000D96F0 /* SleepIn.swift in Sources */,
@@ -404,6 +412,7 @@
 				05B6A8271FEE811A000D96F0 /* TestSubject.swift in Sources */,
 				810807281FFD3967004A7246 /* BunnyEarsTests.swift in Sources */,
 				816287E320157B400078D0FF /* NestParenthesesTests.swift in Sources */,
+				05A117E6202954B90048511C /* Count7.swift in Sources */,
 				8108072D1FFD57DC004A7246 /* Fibonacci.swift in Sources */,
 				810807261FFD388A004A7246 /* BunnyEars.swift in Sources */,
 				81C1D2591FFC795E004A6946 /* MonkeyTroubleTests.swift in Sources */,
@@ -411,6 +420,7 @@
 				05B6A81C1FEE7C3E000D96F0 /* SleepIn.swift in Sources */,
 				8108072F1FFD59DB004A7246 /* FibonacciTests.swift in Sources */,
 				8120C7C9200D91DA003D5F74 /* SumDigitsTests.swift in Sources */,
+				05A117E82029572A0048511C /* Count7Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

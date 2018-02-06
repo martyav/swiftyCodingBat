@@ -105,7 +105,7 @@ extension AnsweredRecursion1: NestParentheses {
                 let start = string.index(after: string.startIndex)
                 let end = string.index(before: string.endIndex)
                 let range = start..<end
-                print(String(string[range]))
+
                 return nestParentheses(String(string[range]))
             } else {
                 return false
@@ -113,5 +113,19 @@ extension AnsweredRecursion1: NestParentheses {
         }
         
         return false
+    }
+}
+
+extension AnsweredRecursion1: Count7 {
+    func count7(_ n: Int) -> Int {
+        if  n == 7 {
+            return 1 // catch all 7s
+        }
+        
+        guard n > 10 else {
+            return 0 // if it isn't a 7, it's nothing!
+        }
+        
+        return count7(n/10) + count7(n % 10) // n/10 gives us the digits except for the rightmost one, whereas n % 10 gives us the rightmost one (ones place)
     }
 }
